@@ -30,7 +30,7 @@ public class WebDrivers
 		if(browser.toLowerCase().contains("chrome")||browser.toLowerCase().contains("google"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			
 			ChromeOptions options=new ChromeOptions();
 			if(imageDisable.equalsIgnoreCase("yes"))
 			{
@@ -40,12 +40,12 @@ public class WebDrivers
 			{
 				new DriverConfigs().headless(options);
 			}
-			options.addArguments("--incognito");
+			//options.addArguments("--incognito");
 			DesiredCapabilities capabilites=DesiredCapabilities.chrome();
 			capabilites.setCapability(ChromeOptions.CAPABILITY, options);
 			driver=new ChromeDriver(options);
 			
-			LogStatus.pass("Chrome drive launched with headless mode = "+headless.toUpperCase()+", Image Disable mode = "+imageDisable.toUpperCase());
+			//LogStatus.pass("Chrome drive launched with headless mode = "+headless.toUpperCase()+", Image Disable mode = "+imageDisable.toUpperCase());
 		}
 		else if(browser.toLowerCase().contains("fire")||browser.toLowerCase().contains("ff"))
 		{
@@ -85,8 +85,9 @@ public class WebDrivers
 		}
 		driver.manage().window().maximize();
 		EventHandlerInit();
-		driver.get(ReadPropertyFile.get("url"));
 		driver.manage().deleteAllCookies();
+		driver.get(ReadPropertyFile.get("url"));
+		
 		return driver;
 	}
 	
