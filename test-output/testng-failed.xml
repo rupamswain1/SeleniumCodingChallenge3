@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.capsulecrm.Listners.Listner"/>
   </listeners>
-  <test thread-count="5" name="Validate menu in account settings(failed)" parallel="tests">
+  <test thread-count="5" name="Add Person and Case(failed)" parallel="tests">
     <classes>
-      <class name="com.capsulecrm.test.Test2">
+      <class name="com.capsulecrm.test.Test1">
         <methods>
+          <include name="addPersonAndCase" invocation-numbers="0"/>
           <include name="clean"/>
           <include name="initialize"/>
-          <include name="accountTest"/>
         </methods>
-      </class> <!-- com.capsulecrm.test.Test2 -->
+      </class> <!-- com.capsulecrm.test.Test1 -->
     </classes>
-  </test> <!-- Validate menu in account settings(failed) -->
+  </test> <!-- Add Person and Case(failed) -->
 </suite> <!-- Failed suite [Selenium Coding challenge Part 3- Naveen Automation Labs] -->

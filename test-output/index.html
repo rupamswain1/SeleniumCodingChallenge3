@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs">
-              <span class="suite-name border-passed">Selenium Coding challenge Part 3- Naveen Automation Labs</span>
+              <span class="suite-name border-failed">Selenium Coding challenge Part 3- Naveen Automation Labs</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" class="hide-methods failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs"> (hide)</a> <!-- hide-methods failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
+                      <a href="#" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" class="show-methods failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs"> (show)</a> <!-- show-methods failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
+                    </span>
+                    <div class="method-list-content failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" title="com.capsulecrm.test.Test1" hash-for-method="addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)">addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" title="com.capsulecrm.test.Test2" hash-for-method="accountTest">accountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" title="com.capsulecrm.test.Test1" hash-for-method="addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)">addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
@@ -122,6 +131,67 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" class="panel Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs">
+          <div class="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.capsulecrm.test.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)">
+                  </a> <!-- addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...) -->
+                  <span class="method-name">addPersonAndCase</span>
+                  <span class="parameters">({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclipse workspace, EMAIL ADDRESS=testperson@eclip.com, WEBSITES=eclip.com, LAST NAME=Person, CASE DESCRIPTION=Challenge 3, TITLE=Mr, CASE NAME=Selenium Coding Cahllenge, TAGS=Selenium})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DAWN&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\RUPAM\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49707}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: a69ac35ae15488b5bce213031ab99c82
+*** Element info: {Using=xpath, value=//div[@class=&apos;entity-details-title&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$$Lambda$288/567427116.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.capsulecrm.Utils.ExplicitWait.waitTillClickable(ExplicitWait.java:14)
+	at com.capsulecrm.WebPages.AddedCase.validateCaseDetails(AddedCase.java:37)
+	at com.capsulecrm.test.Test1.addPersonAndCase(Test1.java:61)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-failed -->
           <div class="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -137,22 +207,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-passed -->
-          <div class="suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.capsulecrm.test.Test1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)">
-                  </a> <!-- addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...) -->
-                  <span class="method-name">addPersonAndCase</span>
-                  <span class="parameters">({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclipse workspace, EMAIL ADDRESS=testperson@eclip.com, WEBSITES=eclip.com, LAST NAME=Person, CASE DESCRIPTION=Challenge 3, TITLE=Mr, CASE NAME=Selenium Coding Cahllenge, TAGS=Selenium})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs-class-passed -->
         </div> <!-- panel Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
         <div panel-name="test-xml-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -162,17 +216,17 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Selenium Coding challenge Part 3- Naveen Automation Labs&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Selenium Coding challenge Part 3- Naveen Automation Labs&quot; parallel=&quot;tests&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.capsulecrm.Listners.Listner&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Add Person and Case&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Add Person and Case&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.capsulecrm.test.Test1&quot;/&gt;
       &lt;class name=&quot;com.capsulecrm.test.SetupAndTear&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Add Person and Case --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validate menu in account settings&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validate menu in account settings&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.capsulecrm.test.Test2&quot;/&gt;
       &lt;class name=&quot;com.capsulecrm.test.SetupAndTear&quot;/&gt;
@@ -220,18 +274,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'accountTest')
-data.setCell(0, 2, 'com.capsulecrm.test.Test2')
-data.setCell(0, 3, 83494);
+data.setCell(0, 1, 'addPersonAndCase')
+data.setCell(0, 2, 'com.capsulecrm.test.Test1')
+data.setCell(0, 3, 1637642);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addPersonAndCase')
-data.setCell(1, 2, 'com.capsulecrm.test.Test1')
-data.setCell(1, 3, 30086);
+data.setCell(1, 1, 'accountTest')
+data.setCell(1, 2, 'com.capsulecrm.test.Test2')
+data.setCell(1, 3, 56033);
 window.suiteTableData['Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs']= { tableData: data, tableDiv: 'times-div-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 28 minutes</span>
               <div id="times-div-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs">
               </div> <!-- times-div-Selenium_Coding_challenge_Part_3-_Naveen_Automation_Labs -->
             </div> <!-- times-div -->
@@ -267,37 +321,50 @@ return data;
               <div class="chronological-class-name">com.capsulecrm.test.Test1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">346 ms</span>
+                <span class="method-start">343 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)</span>
-                <span class="method-start">14273 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">clean</span>
-                <span class="method-start">44365 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capsulecrm.test.Test2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">45646 ms</span>
+                <span class="method-start">343 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">accountTest</span>
-                <span class="method-start">56038 ms</span>
+                <span class="method-start">13236 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capsulecrm.test.Test1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addPersonAndCase({PHONE NUMBER=1234567890, FIRST NAME=Test, JOB TITLE=Demonstrator, CASE TAG=Java, ORGANISATION=Eclip...)</span>
+                <span class="method-start">14564 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capsulecrm.test.Test2</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">clean</span>
-                <span class="method-start">139540 ms</span>
+                <span class="method-start">69275 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capsulecrm.test.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clean</span>
+                <span class="method-start">1652216 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.capsulecrm.test.SetupAndTear</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">clean</span>
-                <span class="method-start">140744 ms</span>
+                <span class="method-start">1652509 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
