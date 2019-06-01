@@ -14,7 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Listner implements ITestListener
 {
-
+	//ItestListner to generate TestNG logs
 	@Override
 	public void onFinish(ITestContext arg0) 
 	{

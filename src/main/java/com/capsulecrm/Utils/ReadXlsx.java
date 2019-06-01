@@ -15,18 +15,22 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.capsulecrm.ReadProperty.ReadPropertyFile;
+
 public class ReadXlsx {
 
 	static Workbook workbook;
 	static Sheet sheet;
+	//Reads Excel file, and return a list of maps, maps are generated for each row
 	public static List<Map<String, String>> getData(String TestCase)
 	{
 		List<Map<String, String>> data=new ArrayList<>();
-		File file=new File(".//src//main//resources//PersonDetails.xlsx");
+		
+		File file=new File(ReadPropertyFile.get("inputData"));
 		try {
 			FileInputStream fis=new FileInputStream(file);
 			workbook=new XSSFWorkbook(fis);
-			sheet=workbook.getSheet(TestCase);
+			sheet=workbook.getSheet(TestCase.toUpperCase());
 			int rows=sheet.getLastRowNum();
 			for(int i=1;i<=rows;i++)
 			{
@@ -38,7 +42,7 @@ public class ReadXlsx {
 					
 					DataFormatter formatter = new DataFormatter();
 					String val = formatter.formatCellValue(row.getCell(j));
-					temp.put(formatter.formatCellValue(sheet.getRow(0).getCell(j)), val);
+					temp.put(formatter.formatCellValue(sheet.getRow(0).getCell(j)).toUpperCase(), val);
 					
 				}
 				data.add(temp);
@@ -62,8 +66,8 @@ public class ReadXlsx {
 		return data;
 	}
 	
-	public static void main(String[] args) {
-		
+	/*public static void main(String[] args) {
+		System.out.println(System.getProperty("user.dir"));
 		List<Map<String, String>> a=getData("TESTCASE1");
 		Map<String, String> mp=a.get(0);
 		for(Map.Entry<String, String> entry: mp.entrySet())
@@ -72,5 +76,5 @@ public class ReadXlsx {
 		}
 		
 	}
-
+*/
 }

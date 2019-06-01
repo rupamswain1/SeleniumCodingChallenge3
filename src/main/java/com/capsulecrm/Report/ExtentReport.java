@@ -20,7 +20,7 @@ public class ExtentReport
 		String currentDate = formatter.format(date);
 		
 		report=new ExtentReports(".\\ExtentReports\\Test Report_"+currentDate+".html");
-		report.loadConfig(new File(".\\src//main//resources//extentreport.xml"));
+		report.loadConfig(new File(".//src//main//resources//extentreport.xml"));
 	}
 	//Initializes Report
 	public static void initialize()

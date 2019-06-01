@@ -1,5 +1,8 @@
 package com.capsulecrm.Browser;
 
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,7 +24,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class WebDrivers 
 {
 	private WebDriver driver;
-	
+	public static Logger log=Logger.getLogger(WebDriver.class);
+	//Launches browser based on input provided in Readproperties.propery file
 	public WebDriver InitializeWebDrivers()
 	{
 		String browser=ReadPropertyFile.get("Browser");
@@ -84,23 +88,25 @@ public class WebDrivers
 			driver=new OperaDriver();
 		}
 		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		EventHandlerInit();
 		driver.manage().deleteAllCookies();
 		driver.get(ReadPropertyFile.get("url"));
-		
+		log.debug("driver launched "+ browser+ "url: "+ReadPropertyFile.get("url"));
 		return driver;
 	}
-	
+	//Opens url
 	public void openUrl(String url)
 	{
 		driver.get(url);
 	}
+	//Quits browser
 	public void quit()
 	{
 		driver.quit();
 	}
 	
-
+	
 	public WebDriver getDriver() {
 		return driver;
 	}

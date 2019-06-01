@@ -13,7 +13,7 @@ import com.capsulecrm.Report.LogStatus;
 
 
 public class EventHandler implements WebDriverEventListener{
-
+	//Event handler to generate logs on driver actions
 	public EventHandler() {
 		
 	}

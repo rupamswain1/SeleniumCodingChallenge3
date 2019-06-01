@@ -1,0 +1,97 @@
+2019-06-01 16:38:12 DEBUG WebDriver:95 - driver launched chromeurl: https://pheonix.capsulecrm.com/login
+2019-06-01 16:38:21 DEBUG LoginPage:34 - Login success
+2019-06-01 16:39:45 DEBUG WebDriver:95 - driver launched chromeurl: https://pheonix.capsulecrm.com/login
+2019-06-01 16:39:54 DEBUG LoginPage:34 - Login success
+2019-06-01 16:39:58 DEBUG NewPerson:63 - Adding new person
+2019-06-01 16:40:05 DEBUG AddedPerson:25 - Navigating to People and Organisation page
+2019-06-01 16:40:07 DEBUG Test1:47 - ********Validating new person data********
+2019-06-01 16:40:07 DEBUG Test1:56 - ********new person data Validated********
+2019-06-01 16:40:10 DEBUG NewCase:47 - Adding new case
+2019-06-01 16:40:17 INFO  AddedCase:35 - Adding new Case
+2019-06-01 16:40:17 DEBUG Test1:62 - ********Validating new Case data********
+2019-06-01 16:40:17 DEBUG Test1:67 - ********new case data Validated********
+2019-06-01 16:40:29 DEBUG WebDriver:95 - driver launched chromeurl: https://pheonix.capsulecrm.com/login
+2019-06-01 16:40:38 DEBUG LoginPage:34 - Login success
+2019-06-01 16:40:43 DEBUG Test2:42 - navigating to Account page
+2019-06-01 16:40:43 DEBUG AccountSettings:77 - Clicked on Menu Account
+2019-06-01 16:40:46 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:40:46 DEBUG Test2:48 - Expected Account Actual: Account
+2019-06-01 16:40:47 DEBUG Test2:42 - navigating to Invoices page
+2019-06-01 16:40:47 DEBUG AccountSettings:77 - Clicked on Menu Invoices
+2019-06-01 16:40:51 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:40:51 DEBUG Test2:48 - Expected Invoices Actual: Invoices
+2019-06-01 16:40:51 DEBUG Test2:42 - navigating to Export page
+2019-06-01 16:40:52 DEBUG AccountSettings:77 - Clicked on Menu Export
+2019-06-01 16:40:54 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:40:54 DEBUG Test2:48 - Expected Export Actual: Export
+2019-06-01 16:40:55 DEBUG Test2:42 - navigating to Appearance page
+2019-06-01 16:40:55 DEBUG AccountSettings:77 - Clicked on Menu Appearance
+2019-06-01 16:40:57 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:40:57 DEBUG Test2:48 - Expected Appearance Actual: Appearance
+2019-06-01 16:40:57 DEBUG AccountSettings:93 - Choose button available to upload file, FIle will be uploaded
+2019-06-01 16:41:01 DEBUG Test2:42 - navigating to Mail Drop Box page
+2019-06-01 16:41:01 DEBUG AccountSettings:77 - Clicked on Menu Mail Drop Box
+2019-06-01 16:41:04 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:04 DEBUG Test2:48 - Expected Mail Drop Box Actual: Mail Drop Box
+2019-06-01 16:41:04 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2019-06-01 16:41:04 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2019-06-01 16:41:05 DEBUG Test2:42 - navigating to Users page
+2019-06-01 16:41:05 DEBUG AccountSettings:77 - Clicked on Menu Users
+2019-06-01 16:41:07 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:08 DEBUG Test2:48 - Expected Users Actual: Users
+2019-06-01 16:41:08 DEBUG AccountSettings:101 - Add new button is available in menu Users
+2019-06-01 16:41:08 DEBUG Users:43 - Adding new User
+2019-06-01 16:41:13 DEBUG Test2:56 - ***************Validating newly added data of page Users*****************
+2019-06-01 16:41:13 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:13 DEBUG Test2:42 - navigating to Opportunities page
+2019-06-01 16:41:14 DEBUG AccountSettings:77 - Clicked on Menu Opportunities
+2019-06-01 16:41:18 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:19 DEBUG Test2:48 - Expected Opportunities Actual: Opportunities
+2019-06-01 16:41:19 DEBUG AccountSettings:101 - Add new button is available in menu Opportunities
+2019-06-01 16:41:19 DEBUG Opportunities:41 - Adding new opprotunity
+2019-06-01 16:41:22 DEBUG Test2:56 - ***************Validating newly added data of page Opportunities*****************
+2019-06-01 16:41:22 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:22 DEBUG Test2:42 - navigating to Tracks page
+2019-06-01 16:41:22 DEBUG AccountSettings:77 - Clicked on Menu Tracks
+2019-06-01 16:41:24 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:24 DEBUG Test2:48 - Expected Tracks Actual: Tracks
+2019-06-01 16:41:24 DEBUG AccountSettings:101 - Add new button is available in menu Tracks
+2019-06-01 16:41:24 DEBUG Tracks:50 - Adding new racks
+2019-06-01 16:41:33 DEBUG Test2:56 - ***************Validating newly added data of page Tracks*****************
+2019-06-01 16:41:33 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:33 DEBUG Test2:42 - navigating to Task Categories page
+2019-06-01 16:41:34 DEBUG AccountSettings:77 - Clicked on Menu Task Categories
+2019-06-01 16:41:35 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:35 DEBUG Test2:48 - Expected Task Categories Actual: Task Categories
+2019-06-01 16:41:36 DEBUG AccountSettings:101 - Add new button is available in menu Task Categories
+2019-06-01 16:41:36 DEBUG TaskCategory:33 - Adding new Task Category
+2019-06-01 16:41:38 DEBUG Test2:56 - ***************Validating newly added data of page Task Categories*****************
+2019-06-01 16:41:38 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:38 DEBUG Test2:42 - navigating to Custom Fields page
+2019-06-01 16:41:39 DEBUG AccountSettings:77 - Clicked on Menu Custom Fields
+2019-06-01 16:41:41 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:41 DEBUG Test2:48 - Expected Custom Fields Actual: Custom Fields
+2019-06-01 16:41:41 DEBUG Test2:42 - navigating to Tags page
+2019-06-01 16:41:41 DEBUG AccountSettings:77 - Clicked on Menu Tags
+2019-06-01 16:41:43 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:43 DEBUG Test2:48 - Expected Tags Actual: Tags and DataTags
+2019-06-01 16:41:44 DEBUG AccountSettings:101 - Add new button is available in menu Tags and DataTags
+2019-06-01 16:41:44 DEBUG Tags:31 - Adding new tags
+2019-06-01 16:41:47 DEBUG Test2:56 - ***************Validating newly added data of page Tags*****************
+2019-06-01 16:41:47 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:47 DEBUG Test2:42 - navigating to Integrations page
+2019-06-01 16:41:47 DEBUG AccountSettings:77 - Clicked on Menu Integrations
+2019-06-01 16:41:49 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:49 DEBUG Test2:48 - Expected Integrations Actual: Integrations
+2019-06-01 16:41:49 DEBUG AccountSettings:222 - ****************TOTAL CONFIGURE BUTTON AVAILABLE: 10************
+2019-06-01 16:41:49 DEBUG Test2:56 - ***************Validating newly added data of page Integrations*****************
+2019-06-01 16:41:49 DEBUG Test2:58 - Validation success
+2019-06-01 16:41:49 DEBUG Test2:42 - navigating to Trash page
+2019-06-01 16:41:50 DEBUG AccountSettings:77 - Clicked on Menu Trash
+2019-06-01 16:41:52 DEBUG Test2:46 - ***************Validating titles*****************
+2019-06-01 16:41:52 DEBUG Test2:48 - Expected Trash Actual: Trash
+2019-06-01 16:41:54 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-06-01 16:41:54 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-06-01 16:41:54 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-06-01 16:41:54 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-06-01 16:41:54 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/RUPAM/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

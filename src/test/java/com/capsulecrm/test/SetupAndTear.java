@@ -1,6 +1,10 @@
 package com.capsulecrm.test;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.capsulecrm.Browser.WebDrivers;
@@ -11,14 +15,18 @@ import com.capsulecrm.WebPages.LoginPage;
 
 public class SetupAndTear {
 	
-	@Test
+	@BeforeSuite
 	public void setup()
 	{
 		 ExtentReport.initialize();
-		  
 		 ExtentReport.logger= ExtentReport.report.startTest("Selenium coding challenge 3");
-		WebDriver driver=new WebDrivers().InitializeWebDrivers();
-		new LoginPage(driver).login();
+			
+	}
+	
+	@AfterSuite
+	public void clean()
+	{
+		ExtentReport.report.flush();
 	}
 
 }
